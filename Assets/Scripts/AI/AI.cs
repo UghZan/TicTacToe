@@ -34,10 +34,10 @@ public static class AI
                 startDepth = 10;
                 break;
             case 4:
-                startDepth = 8;
+                startDepth = 7;
                 break;
             case 5:
-                startDepth = 6;
+                startDepth = 5;
                 break;
         }
 
