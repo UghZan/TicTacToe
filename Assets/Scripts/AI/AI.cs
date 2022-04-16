@@ -158,12 +158,12 @@ public static class AI
                 //if new max limit of maximizing player is found
                 if (newMove.score > alpha)
                 {
-                    //remember it for neighboring child
-                    //and remember this move
+                    //remember it as a new max
+                    //and remember the move as new best
                     alpha = bestScore = newMove.score;
                     move = availPlaces[i];
                     //if new max limit is lower than min player limit, then stop
-                    //because there is no sense in checking it further - it's a guaranteed loss
+                    //because there is no sense in checking it further - no one would go that way
                     if (beta <= alpha) break;
                 }
             }
